@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://antariksh.net/images/gallery/avalon-gal01.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex; /* Flexbox allows you to align and distribute space among items within the container */
+    padding: 2% 6%; /*adds space, 2% applies to the top and bottom, while the 6% applies to the left and right */
+    justify-content: space-between; /* controls the horizontal alignment */
+    align-items: center; /* vertical alignment */
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1; /* element take up all the available space */
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none; /*  removes the default bullet points */
+    display: inline-block; /* list items are displayed next to each other */
+    padding: 8px 12px; /* adds space inside each list item */
+    position: relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none; /* removes the default underline that appears on anchor (<a>) elements. */
+    font-size: 13px;
+}
+.nav-links ul li::after { /* ::after pseudo-element is used here to create a line */
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FFFFFF;
+    display: block; /* it will create a new line and take up the full width of its container */
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* moves the element by a certain percentage of its own width and height. */
+     text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer; /* change the mouse cursor to a pointer when hovering over an element */
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.Overview{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #0a0101;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.Antariksh{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between; /* control the alignment and spacing of elements along the main axis */
+}
+.Antariksh-col{
+    flex-basis: 31%;
+    background: pink;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.Antariksh-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.page3{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.page3{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://www.vramcomputers.com/wp-content/uploads/2014/10/Contact-Us-Page-Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.page3 h1{
+    margin-top: 100px;
+    color: white;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: 500;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid blueviolet;
+}
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://www.antariksh.net/images/avalon-bgd.jpg);
+    background-position: center;
+}
+
+
+.content h2{
+font-size: 40px;
+color:rgb(223, 214, 252);
+}
+.content p{
+    margin: 10px 0 30px;
+    color: #fff;
+    font-size: 16px;
+}
+.bldgimg{
+    width: 500px;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+
+}
+.anim{
+    opacity: 0;
+    transform: translateY(40px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.slider{
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    text-align: center;  
+}
+.card-list .card-item{
+  
+    width: 400px;
+    display: block;
+    background: rgb(223, 214, 252);
+    border: 2px solid transparent;
+    padding: 18px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    
+    
+}
+.card-list .card-item:hover{
+border-color: #622e7a;
+}
+
+.card-list .card-image{
+  
+    width: 100%;
+    border-radius: 10px;
+  
+}
+.card-list .badge{
+    
+    background:  rgb(255, 255, 255) ;
+    color: #571675;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    border-radius: 50px;   
+}
+
+.plan{
+    background-color: rgb(223, 214, 252);
+    padding: 20px;
+    text-align: center;  
+    color: #571675;
+}
+.floor{
+    width: 900px;
+    align-items: center;
+}
+.footer{
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 200px;
+    background-color: #fff;
+}
